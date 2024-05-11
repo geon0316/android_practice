@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="연락처 관리"
+            android:textSize="50dp"
+            android:fontFamily="@font/hannapro"
+            android:layout_marginStart="50dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="100" />
+        <TextView
+            android:id="@+id/txt_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="텅 비었다."
+            android:textSize="50dp"
+            android:fontFamily="@font/euljiro10yearslater"
+            android:visibility="gone"
+            android:gravity="center"/>
+
+        <android.widget.Button
+            android:id="@+id/contact_add_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/person_add_sharp_icon"/>
+
+            
+    </FrameLayout>
+
+</LinearLayout>

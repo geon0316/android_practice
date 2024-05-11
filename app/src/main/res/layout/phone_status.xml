@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/goto_home_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/hanna_11yrs"
+            android:text="휴대폰 동작상태"
+            android:layout_marginLeft="30dp"
+            android:textSize="45dp"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="안드로이드 버전"/>
+            <TextView
+                android:id="@+id/androidVersion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="Version"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 칼럼 구분 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="WIFI"/>
+            <TextView
+                android:id="@+id/wifiInfo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="OFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 칼럼 구분 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="LTE 정보"/>
+            <TextView
+                android:id="@+id/lteInfo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="OFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 칼럼 구분 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="내부 저장소 용량 / 남은 용량"/>
+            <TextView
+                android:id="@+id/storageInfo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="총 용량 / 남은 용량"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 칼럼 구분 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="설치된 앱 수 / 동작중인 앱 수"/>
+            <TextView
+                android:id="@+id/appDataInfo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="총 개수 / 동작중 개수"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

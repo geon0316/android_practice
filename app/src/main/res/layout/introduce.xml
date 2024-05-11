@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/goto_home_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="저자 소개"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:textSize="50dp"
+            android:layout_marginStart="50dp"/>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="344dp"
+            android:layout_height="371dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="200dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cppp" />
+
+        <ImageView
+            android:layout_width="186dp"
+            android:layout_height="371dp"
+            android:layout_marginTop="350dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chicken" />
+
+        <ImageView
+            android:layout_width="791dp"
+            android:layout_height="396dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="200dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/avante" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bghremovebg"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배건형"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="145dp"
+            android:textSize="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경기도 안산"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTJ"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C++"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="치킨"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돈까스"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동차"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2002년"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="네비웍스"
+            android:fontFamily="@font/euljiro"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="30dp"/>
+    </FrameLayout>
+
+</LinearLayout>

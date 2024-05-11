@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_first"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:textSize="40dp"
+        android:text="Personal diary">
+    </TextView>
+
+    <!-- 첫번째 열 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:shadowRadius="1"
+            android:text="폰 상태 검색">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="저자 소개">
+        </Button>
+    </LinearLayout>
+
+    <!-- 두번째 열 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="연락처 관리">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="인터넷 검색">
+        </Button>
+    </LinearLayout>
+
+    </LinearLayout>

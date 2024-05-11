@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/goto_list_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="연락처 정보"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:textSize="50dp"
+            android:layout_marginStart="50dp"/>
+
+
+
+    </LinearLayout>
+
+    <!-- 사용자 입력창 -->
+
+    <!-- 이름 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성명"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/name_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="35dp"
+            android:hint="이름을 입력하세요"/>
+    </LinearLayout>
+
+    <!-- 전화번호 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/phoneNum_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="35dp"
+            android:inputType="phone"
+            android:hint="'-'는 제외후 입력"/>
+    </LinearLayout>
+
+    <!-- 이메일 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/email_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="35dp"
+            android:hint="이메일 입력"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <!-- 직장명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직장명"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/company_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="35dp"
+            android:hint="예) 네비웍스"/>
+    </LinearLayout>
+
+    <!-- 직장명 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="직함"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/level_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="35dp"
+            android:hint="예) 책임"/>
+    </LinearLayout>
+
+    <!-- 레이팅바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중요도"
+            android:fontFamily="@font/hanna_11yrs"
+            android:layout_marginLeft="30dp"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <RatingBar
+            android:id="@+id/contact_select_rating"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_add_save_btn"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:fontFamily="@font/dohyun"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle"
+            android:text="저장"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_share_btn"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle"
+            android:fontFamily="@font/dohyun"
+            android:text="공유"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_delete_btn"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle"
+            android:fontFamily="@font/dohyun"
+            android:text="삭제"/>
+    </LinearLayout>
+</LinearLayout>
