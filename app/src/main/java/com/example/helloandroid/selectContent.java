@@ -140,6 +140,20 @@ public class selectContent extends Activity {
             public void onClick(View v) {
                 // 공유 처리
                 Log.d("공유 버튼 처리", "공유 버튼 클릭 처리");
+//                AlertDialog.Builder popUp = new AlertDialog.Builder(selectContent.this);
+//                popUp.setTitle("연락처 공유");
+//                popUp.setMessage("팝업");
+//                popUp.setView(selectContent.this);
+                Intent PopupIntent = new Intent(getApplicationContext(), contact_share.class);
+
+                // 선택한 주소록의 db key값을 같이 전달
+                PopupIntent.putExtra("userName", nameInfo.getText().toString());
+                PopupIntent.putExtra("userPhone", phoneInfo.getText().toString());
+                PopupIntent.putExtra("userEmail", emailInfo.getText().toString());
+                PopupIntent.putExtra("userCompany", companyInfo.getText().toString());
+
+                // 팝업 액티비티 실행
+                startActivity(PopupIntent);
             }
         });
 
