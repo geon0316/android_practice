@@ -36,6 +36,8 @@
         <activity android:name=".phone_status"/>
         <activity android:name=".webView"/>
         <activity android:name=".introduce"/>
+        <activity android:name=".contact_share"/>
+
     </application>
 
 </manifest>
