@@ -17,7 +17,7 @@ public class main_layout extends Activity {
     TextView text_Introduce;  // 저자 소개
 
     // DB 매니저 인스턴스
-    private DBManager dbManager;
+    // private DBManager dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class main_layout extends Activity {
         setContentView(R.layout.main);
 
         // DB 매니저 인스턴스 생성
-        dbManager = new DBManager(this);
+        // dbManager = new DBManager(this);
 
         // 텍스트 바인딩
 

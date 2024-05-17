@@ -10,9 +10,16 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class webView extends Activity {
     // private String TAG = WebViewActivity.class.getSimpleName();
+
+    // url input
+    EditText inputURL;
+
+    // search Btn
+    Button searchBtn;
 
     private WebView webView;
 
@@ -26,6 +33,19 @@ public class webView extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web_view);
+
+        // url input
+        inputURL = (EditText)findViewById(R.id.input_search);
+
+        // search Btn
+        searchBtn = (Button) findViewById(R.id.search_btn);
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 찾기 버튼을 클릭 했을때 처리
+                webView.loadUrl(inputURL.getText().toString());
+            }
+        });
 
         // 홈 인텐트
         ContactListIntent = new Intent(getApplicationContext(), main_layout.class);
